@@ -1,0 +1,13 @@
+Exportar o arquivo do DHCP 
+Export-DhcpServer -ComputerName "old-dhcpserver.domain.local" -File "C:\Temp\dhcp.xml" -Leases
+Parar o serviço  e desativar no Services 
+
+Importar o arquivo DHCP
+Import-DhcpServer -ComputerName "new-dhcpserver.domain.local" -File "C:\Temp\dhcp.xml" -Leases
+
+Insire um caminho para o BackupPath: c:\Temp\Backup.xml 
+
+
+
+
+
